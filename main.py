@@ -267,7 +267,7 @@ def preprocess(df):
     return Sub_df
 
 if __name__ == "__main__":
-    file_path = "dynamic_pricing.csv"
+    file_path = "electronic_products_prices.csv"
     df = pd.read_csv(file_path)
     df = preprocess(df)
 
