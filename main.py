@@ -3,9 +3,9 @@ sys.path.append("..")
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
-from IPython.display import display
-from env import DynamicPricingForECommerce
-from model import QLearningAgent
+#from IPython.display import display
+import DynamicPricingForECommerce
+import QLearningAgent
 import re
 import matplotlib.pyplot as plt
 
