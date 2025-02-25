@@ -4,12 +4,9 @@
 This project implements a **dynamic retail pricing strategy** using **Q-learning**, a reinforcement learning algorithm that optimizes pricing decisions over time. The goal is to maximize revenue by selecting the best pricing strategy for each product based on market conditions, demand elasticity, and weekday trends.
 
 ## Dataset Description
-The dataset contains historical pricing information for various electronic products, including:
-- **Product ID**: Unique identifier for each product
-- **Prices (Min & Max)**: Historical price range for each product
-- **Demand Data**: Consumer interest level based on historical records
-- **Cost Information**: Estimated production or acquisition costs
-- **Time Indicators**: Potentially useful for detecting trends over weekdays vs. weekends
+This is a list of over 15,000 electronic products with pricing information across 10 unique fields provided by Datafiniti's Product Database. The dataset also includes the brand, category, merchant, name, source, and more.
+
+Note that this is a sample of a large dataset. The full dataset is available through Datafiniti.
 
 ### **Download the Dataset**
 To run this project, you need to download the dataset from **[Kaggle](https://www.kaggle.com/datasets/datafiniti/electronic-products-prices/data)** and place it in the current directory.
