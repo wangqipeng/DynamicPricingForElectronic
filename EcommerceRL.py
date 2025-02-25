@@ -267,8 +267,7 @@ def preprocess(df):
     return Sub_df
 
 if __name__ == "__main__":
-# Reload the dataset
-    file_path = "/Users/kevinqpwang/Documents/Project/dataset/electronic_products_prices.csv"
+    file_path = "dynamic_pricing.csv"
     df = pd.read_csv(file_path)
     df = preprocess(df)
 
@@ -279,6 +278,7 @@ if __name__ == "__main__":
     df["cost"] = df["Discount_price"] * 0.6
     
     price_slots_num = 10
+    
     df["price_range"] = df["Actual_price"].apply(lambda x: np.linspace(0.5*x, 1.5*x, num=price_slots_num).tolist())
 
     products_num= len(df[["name"]].value_counts())
