@@ -3,6 +3,19 @@
 ## Introduction
 This project implements a **dynamic retail pricing strategy** using **Q-learning**, a reinforcement learning algorithm that optimizes pricing decisions over time. The goal is to maximize revenue by selecting the best pricing strategy for each product based on market conditions, demand elasticity, and weekday trends.
 
+## Dataset Description
+The dataset contains historical pricing information for various electronic products, including:
+- **Product ID**: Unique identifier for each product
+- **Prices (Min & Max)**: Historical price range for each product
+- **Demand Data**: Consumer interest level based on historical records
+- **Cost Information**: Estimated production or acquisition costs
+- **Time Indicators**: Potentially useful for detecting trends over weekdays vs. weekends
+
+### **Download the Dataset**
+To run this project, you need to download the dataset from **[Kaggle](https://www.kaggle.com/datasets/datafiniti/electronic-products-prices/data)** and place it in the current directory.
+
+---
+
 ## Solution Overview
 The **Q-learning agent** interacts with an environment where it adjusts product prices and learns from feedback (rewards). The environment simulates **consumer demand** by considering **price elasticity**, **weekday/weekend effects**, and other market factors.
 
@@ -114,7 +127,18 @@ The dataset includes:
 
 ---
 
-## **6. Expected Results**
+## **6. How to Run the Project**
+### **Steps to Execute**
+1. **Download the dataset** from Kaggle: [Electronic Products Prices](https://www.kaggle.com/datasets/datafiniti/electronic-products-prices/data)
+2. **Save the dataset** in the project directory.
+3. **Run the command**:
+   ```sh
+   poetry run python main.py
+   ```
+
+---
+
+## **7. Expected Results**
 By the end of training, the Q-learning agent will:
 ✅ **Identify the most profitable price for each product** based on demand elasticity.  
 ✅ **Adjust pricing dynamically** based on **weekday/weekend trends**.  
@@ -122,7 +146,7 @@ By the end of training, the Q-learning agent will:
 
 ---
 
-## **7. Future Enhancements**
+## **8. Future Enhancements**
 - **Deep Q-Networks (DQN):** Use neural networks to approximate Q-values.
 - **Multi-Agent Pricing:** Allow multiple sellers to compete dynamically.
 - **Stock-Level Influence:** Incorporate inventory constraints into the pricing model.
@@ -131,5 +155,4 @@ By the end of training, the Q-learning agent will:
 
 ## **Conclusion**
 This project demonstrates how **Q-learning** can optimize **dynamic retail pricing** by balancing **profitability and demand sensitivity**. By leveraging **reinforcement learning**, retailers can implement **adaptive pricing strategies** that respond to market trends in real-time.
-
 
