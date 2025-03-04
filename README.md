@@ -135,21 +135,6 @@ The dataset includes:
 
 ---
 
-## **7. Expected Results**
-By the end of training, the Q-learning agent will:
-✅ **Identify the most profitable price for each product** based on demand elasticity.  
-✅ **Adjust pricing dynamically** based on **weekday/weekend trends**.  
-✅ **Outperform static pricing strategies** by continuously learning from past performance.  
-
----
-
-## **8. Future Enhancements**
-- **Deep Q-Networks (DQN):** Use neural networks to approximate Q-values.
-- **Multi-Agent Pricing:** Allow multiple sellers to compete dynamically.
-- **Stock-Level Influence:** Incorporate inventory constraints into the pricing model.
-
----
-
 ## **Conclusion**
 This project demonstrates how **Q-learning** can optimize **dynamic retail pricing** by balancing **profitability and demand sensitivity**. By leveraging **reinforcement learning**, retailers can implement **adaptive pricing strategies** that respond to market trends in real-time.
 
