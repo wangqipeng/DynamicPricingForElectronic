@@ -63,7 +63,7 @@ Each **state transition** updates these values as the environment evolves.
 The reward function measures **profitability** based on the chosen price and resulting demand:
 
 \[
-Reward = (Price - Cost) \times Demand
+Reward = (Price - Cost) \times  Demand
 \]
 
 Where:
